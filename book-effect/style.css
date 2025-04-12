@@ -12,12 +12,12 @@ body {
   place-content: center;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
   background: #fcd6ab;
+  overflow: hidden;
 }
 
 .flipbook {
-  width: 956px; /* 2 x 478 */
+  width: 956px;
   height: 478px;
 }
 
@@ -45,9 +45,9 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.08);
   width: 478px;
   height: 478px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .flipbook .page img {
@@ -60,4 +60,18 @@ body {
   font-size: 14px;
   margin-top: 10px;
   color: #444;
+}
+
+/* --- MOBİL UYUMLULUK --- */
+@media (max-width: 1024px) {
+  .flipbook {
+    width: 90vw;
+    height: 45vw;
+    max-height: 90vh;
+  }
+
+  .flipbook .page {
+    width: 50%;
+    height: 100%;
+  }
 }
