@@ -63,11 +63,10 @@ body {
 }
 
 /* --- MOBİL UYUMLULUK --- */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .flipbook {
     width: 90vw;
-    height: 45vw;
-    max-height: 90vh;
+    height: calc(90vw / 2); /* Sayfalar kare olduğundan yükseklik yarısı */
   }
 
   .flipbook .page {
